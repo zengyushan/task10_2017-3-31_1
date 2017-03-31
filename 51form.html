@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" charset="UTF-8">
+    <title>51表单</title>
+
+</head>
+<body>
+<header>
+    <div class="container container-whole padding">
+        <div class="row margin top-row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding top-col">
+                <span class="custom-phone">客服热线:010-594-78634</span>
+                <div class="head-btn">
+                    <button class="login">登录</button><!--
+                    -->
+                    <button class="register">注册</button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+        <!--导航栏-->
+        <div class="row margin nav-row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+                <div class="navbar navbar-default my-navbar" role="navigation">
+                    <div class="navbar-header">
+                        　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+                        <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav my-navbar-nav">
+                            <li><a class="home-page" href="#">首页</a></li>
+                            <li><a href="#">在线定制</a></li>
+                            <li><a href="#">标准箱</a></li>
+                            <li><a href="#">品质保障</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container container-whole padding">
+        <!--流程图-->
+        <div class="row margin proc-row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+                <ul class="whole-proc">
+                    <li class="every-procedure this-proc">
+                        <div class="line"></div>
+                        <div class="circle">1</div>
+                        <div class="step-text">1.定制纸箱</div>
+                    </li>
+                    <li class="every-procedure">
+                        <div class="line"></div>
+                        <div class="circle">2</div>
+                        <div class="step-text">2.选择数量</div>
+                    </li>
+                    <li class="every-procedure">
+                        <div class="line"></div>
+                        <div class="circle">3</div>
+                        <div class="step-text">3.上传附件</div>
+                    </li>
+                    <li class="every-procedure">
+                        <div class="line"></div>
+                        <div class="circle">4</div>
+                        <div class="step-text">4.确认下单</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+
+        <!--提示-->
+        <div class="row margin">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding hint-col">
+                <div class="hint-icon"></div>
+                <span>请您按照以下步骤来定制您的纸箱</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+        <!--选择箱形-->
+        <div class="row margin">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+                <div class="box-title">选择箱形</div>
+                <div class="row margin box-row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding"><input type="radio" name="box" id="box1"><label class="label" for="box1">对口箱</label></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding"><input type="radio" name="box" id="box2"><label class="label" for="box2">飞机盒</label></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding"><input type="radio" name="box" id="box3"><label class="label" for="box3">天地盖</label></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0 padding space"></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle detail-btn" data-toggle="dropdown"><span class="btn-text">查看详情</span>
+                                <span class="pare-caret"><span class="caret my-caret"></span></span>
+                            </button>
+                            <ul class="dropdown-menu menu-ul menu-ul1" role="menu">
+                                <li>
+                                    <a href="#">功能</a>
+                                </li>
+                                <li>
+                                    <a href="#">另一个功能</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+        <!--确定尺寸-->
+        <div class="row margin size-row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+                <div class="size-title">确定尺寸</div>
+                <div class="row margin size-subrow">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 padding">
+                        <div class="row margin sub-third-row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding">
+                                <input type="radio" id="out" name="size"><label class="label" for="out">外径</label></span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding fill-in">
+                                长<input type="text">mm
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding fill-in">
+                                宽<input type="text">mm
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding fill-in">
+                                高<input type="text">mm
+                            </div>
+                        </div>
+                        <div class="row margin sub-third-row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding">
+                                <input type="radio" id="in" name="size"><label class="label" for="in">内径</label></span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding fill-in">
+                                长<input type="text">mm
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding fill-in">
+                                宽<input type="text">mm
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding fill-in">
+                                高<input type="text">mm
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding dropdown-col">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle detail-btn" data-toggle="dropdown"><span class="btn-text">查看详情</span>
+                                <span class="pare-caret"><span class="caret my-caret"></span></span>
+                            </button>
+                            <ul class="dropdown-menu menu-ul" role="menu">
+                                <li>
+                                    <a href="#">功能</a>
+                                </li>
+                                <li>
+                                    <a href="#">另一个功能</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+        <!--选择材质-->
+        <div class="row margin">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+                <div class="material-title">选择材质</div>
+                <div class="row margin material-subrow">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 padding every-material"><input type="radio" id="material1" name="material"><label class="label" for="material1">三层A瓦优质</label></div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 padding every-material"><input type="radio" id="material2" name="material"><label class="label" for="material2">三层A瓦优质</label></div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 padding every-material"><input type="radio" id="material3" name="material"><label class="label" for="material3">三层A瓦优质</label></div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 padding every-material"><input type="radio" id="material4" name="material"><label class="label" for="material4">三层A瓦优质</label></div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 padding every-material"><input type="radio" id="material5" name="material"><label class="label" for="material5">三层A瓦优质</label></div>
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 padding detail-subcol">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle detail-btn" data-toggle="dropdown"><span class="btn-text">查看详情</span>
+                                <span class="pare-caret"><span class="caret my-caret"></span></span>
+                            </button>
+                            <ul class="dropdown-menu menu-ul menu-ul3" role="menu">
+                                <li>
+                                    <a href="#">功能</a>
+                                </li>
+                                <li>
+                                    <a href="#">另一个功能</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+        <!--下一步按钮-->
+        <div class="row margin">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding next-col">
+                <button>下一步</button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container padding container-whole footer-con">
+        <div class="row margin footer-row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+                <div class="row margin footer-subrow">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding">
+                        51包装网— 纸箱包装首选服务平台
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding other-page">
+                        <ul>
+                            <li><a class="us" href="#">关于我们</a></li>
+                            <li><a class="other-link" href="#">配送流程</a></li>
+                            <li><a class="other-link" href="#">联系我们</a></li>
+                            <li><a class="other-link" href="#">下单指南</a></li>
+                            <li><a class="other-link" href="#">媒体介绍</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding contact">
+                        <ul>
+                            <li>
+                                TEL：400-0000-000
+                            </li>
+                            <li>
+                                企业QQ：123456789
+                            </li>
+                            <li>
+                                微信号：XXXXXXX
+                            </li>
+                        </ul>
+                        <img src="images/qrcode.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+        <div class="row margin copyright-row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding copyright-col">
+                <span class="copyright">北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;
+                51baozhuang.com015All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;京icp备99999999-1
+                </span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 padding"></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
